@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710806635919",
+    "project_id": "al-tabreed",
+    "storage_bucket": "al-tabreed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710806635919:android:e7444e528688ae1655b7fa",
+        "android_client_info": {
+          "package_name": "com.aak.al_tabreed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI7-vDV3v6y_o4C7G68R9eZWWupQhvHA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

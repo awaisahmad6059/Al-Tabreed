@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/screenLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Contact Setting"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/wahtsappLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Whatsapp Contact "
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenLabel" />
+
+    <EditText
+        android:id="@+id/whatsappNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter WhatsApp number"
+        android:inputType="phone"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@+id/wahtsappLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/callLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Call Contact "
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappNumberEditText" />
+
+    <EditText
+        android:id="@+id/callNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Call number"
+        android:inputType="phone"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintTop_toBottomOf="@+id/callLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@+id/callNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/ButtonBlue"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@+id/callNumberEditText"
+        app:layout_constraintStart_toEndOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/ButtonWhite"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

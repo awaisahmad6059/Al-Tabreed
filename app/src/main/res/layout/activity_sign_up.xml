@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenbackground"
+    tools:context=".Authentication.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/ButtonWhite"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back_button_desc"
+            android:layout_margin="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_your_naccount"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Username input -->
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:drawablePadding="12dp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/username"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background" />
+
+        <!-- Email input -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:drawablePadding="12dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/email"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background" />
+
+        <!-- Phone Number input -->
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/country_code_e_g_923001234567"
+            android:drawablePadding="12dp"
+            android:inputType="phone"
+            android:drawableStart="@drawable/ic_phone"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background" />
+
+        <!-- Password input -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/password"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background"
+            android:inputType="textPassword" />
+
+        <!-- Confirm Password input -->
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/password"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background"
+            android:inputType="textPassword" />
+
+        <!-- Sign up button -->
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textSize="18sp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="@color/ButtonBlue"
+            android:textColor="@color/white"
+            android:padding="12dp" />
+
+        <!-- Sign in link -->
+        <TextView
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account_sign_in"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="32dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</ScrollView>

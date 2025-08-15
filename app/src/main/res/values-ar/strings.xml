@@ -1,0 +1,51 @@
+<resources>
+    <string name="select_language">زبان منتخب کریں</string>
+    <string name="language">اللغة</string>
+
+    <string name="back_button_desc">واپس بٹن</string>
+    <string name="search_button_desc">تلاش</string>
+    <string name="notification_button_desc">اطلاعات</string>
+    <string name="add_user">صارف شامل کریں</string>
+    <string name="menu_button_desc">مینو کھولیں</string>
+    <string name="navigation_drawer_open">نیویگیشن ڈراور کھولیں</string>
+    <string name="navigation_drawer_close">نیویگیشن ڈراور بند کریں</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">ہیلو خالی فریگمنٹ</string>
+    <string name="drawer_open">ڈراور کھلا</string>
+    <string name="drawer_close">ڈراور بند</string>
+
+    <string name="app_name">التبريد</string>
+    <string name="login_your_account">تسجيل الدخول إلى \nحسابك</string>
+    <string name="email_phone_username">البريد الإلكتروني، الهاتف، اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="create_a_new_account_sign_up">إنشاء حساب جديد؟ سجل الآن</string>
+    <string name="create_your_naccount">إنشاء \nحسابك</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="country_code_e_g_923001234567">+ رمز الدولة (مثال: +٩٢٣٠٠١٢٣٤٥٦٧)</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="sign_up">سجل</string>
+    <string name="already_have_an_account_sign_in">هل لديك حساب؟ سجل الدخول</string>
+    <string name="new_norder">طلب \nجديد</string>
+    <string name="services_n_name">اسم \nالخدمة</string>
+    <string name="home">الرئيسية</string>
+    <string name="order_history">سجل الطلبات</string>
+    <string name="contact">اتصل</string>
+    <string name="new_order">طلب جديد</string>
+    <string name="category">الفئة</string>
+    <string name="detail">التفاصيل</string>
+    <string name="write_details_here">اكتب التفاصيل هنا...</string>
+    <string name="add_photos_optional">إضافة صور (اختياري)</string>
+    <string name="tap_to_add_photos_docs_etc">انقر لإضافة الصور، المستندات، إلخ</string>
+    <string name="select_date_and_time">اختر التاريخ والوقت</string>
+    <string name="enter_time">أدخل الوقت</string>
+    <string name="enter_location">أدخل الموقع</string>
+    <string name="add_address_current_or_manual">أضف العنوان (الحالي أو اليدوي)</string>
+    <string name="pricing">التسعير</string>
+    <string name="task_pricing_will_be_discussed_after_submission">سيتم مناقشة تسعير المهمة بعد التقديم.</string>
+    <string name="we_ll_contact_you_via_whatsapp_or_call_to_provide_a_fair_quote_based_on_your_specific_requirements">سوف نتواصل معك عبر واتساب أو الاتصال لتقديم عرض سعر مناسب بناءً على متطلباتك.</string>
+    <string name="submit">إرسال</string>
+    <string name="cancel">إلغاء</string>
+    <string name="all_tasks">جميع المهام</string>
+</resources>

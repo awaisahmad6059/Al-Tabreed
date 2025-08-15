@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/ButtonBlue"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/sign_out_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="-8dp"
+            android:src="@drawable/power"
+            android:contentDescription="Sign Out"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!-- Sign Out Icon (Top Left) -->
+
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <!-- User Image (Circle Image View) -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logofull"
+                android:layout_marginTop="10dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Curved Section -->
+    <RelativeLayout
+        android:id="@+id/curvedSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:background="@drawable/curved_background"
+        android:elevation="6dp"
+        android:padding="16dp"
+        android:layout_marginTop="-40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Request Box -->
+            <LinearLayout
+                android:id="@+id/requestmaintanace"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/gradient"
+                android:elevation="6dp"
+                android:padding="16dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/order"
+                    android:contentDescription="Request Icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_norder"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Notification Box -->
+            <LinearLayout
+                android:id="@+id/notification"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/gradient"
+                android:elevation="6dp"
+                android:padding="16dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center">
+
+
+                <!-- Container to position icon at bottom-right -->
+
+                <ImageView
+                    android:id="@+id/balanceIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/service"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/services_n_name"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentTasksRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/curvedSection"
+        android:padding="16dp" />
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/screenbackground"
+    tools:context=".Authentication.User.UserNewOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@color/ButtonWhite"
+            android:src="@drawable/back"
+            android:contentDescription="@string/back_button_desc"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:text="@string/new_order"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Category -->
+            <TextView
+                android:id="@+id/label_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/category"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_corner_background"
+                android:padding="12dp" />
+
+            <!-- Detail -->
+            <TextView
+                android:id="@+id/label_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/input_detail"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corner_background"
+                android:hint="@string/write_details_here"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="12dp" />
+
+            <!-- Add Photos -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/add_photos_optional"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/addmedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/image_preview"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/tap_to_add_photos_docs_etc"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Select Date & Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/select_date_and_time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/inputtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_background"
+                android:hint="@string/enter_time"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/clock"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:padding="12dp" />
+            <!-- Add Address -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/add_address_current_or_manual"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/inoutlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_background"
+                android:hint="@string/enter_location"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/location"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:padding="12dp" />
+
+
+            <!-- Pricing Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/pricing"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="8dp"
+                android:background="@color/SkyDarkBlue"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#AAD5D1"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_pricing_will_be_discussed_after_submission"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/we_ll_contact_you_via_whatsapp_or_call_to_provide_a_fair_quote_based_on_your_specific_requirements"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/submit"
+                    android:backgroundTint="@color/ButtonBlue"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    android:backgroundTint="@color/ButtonWhite"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

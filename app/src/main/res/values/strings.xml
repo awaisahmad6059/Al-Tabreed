@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Al-Tabreed</string>
+    <string name="select_language">Select Language</string>
+    <string name="language">Language</string>
+
+
+    <string name="back_button_desc">Back Button</string>
+    <string name="search_button_desc">Search</string>
+    <string name="notification_button_desc">Notifications</string>
+    <string name="add_user">Add User</string>
+    <string name="menu_button_desc">Open Menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+
+
+    <string name="login_your_account">Login Your \nAccount</string>
+    <string name="email_phone_username">email,Phone,Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_a_new_account_sign_up">Create a new account? sign up</string>
+    <string name="create_your_naccount">Create Your \nAccount</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="country_code_e_g_923001234567">+ Country Code(e.g. +923001234567)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account_sign_in">Already have an account? sign in</string>
+    <string name="new_norder">New \nOrder</string>
+    <string name="services_n_name">Services \n Name</string>
+    <string name="home">Home</string>
+    <string name="order_history">Order History</string>
+    <string name="contact">Contact</string>
+    <string name="new_order">New Order</string>
+    <string name="category">Category</string>
+    <string name="detail">Detail</string>
+    <string name="write_details_here">Write details here...</string>
+    <string name="add_photos_optional">Add Photos (Optional)</string>
+    <string name="tap_to_add_photos_docs_etc">Tap to add photos, docs, etc</string>
+    <string name="select_date_and_time">Select Date and Time</string>
+    <string name="enter_time">Enter Time</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="add_address_current_or_manual">Add Address (current or manual)</string>
+    <string name="pricing">Pricing</string>
+    <string name="task_pricing_will_be_discussed_after_submission">Task pricing will be discussed after submission.</string>
+    <string name="we_ll_contact_you_via_whatsapp_or_call_to_provide_a_fair_quote_based_on_your_specific_requirements">We\'ll contact you via WhatsApp or call to provide a fair quote based on your specific requirements.</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="all_tasks">All Tasks</string>
+</resources>

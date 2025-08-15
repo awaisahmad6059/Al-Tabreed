@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenbackground"
+    tools:context=".Authentication.LoginActivity">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title + Icon Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_create_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/login_your_account"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <!-- New Icon -->
+            <ImageView
+                android:id="@+id/iv_new_icon"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/language"
+            android:contentDescription="New Icon" />
+        </LinearLayout>
+
+        <!-- Email input -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_phone_username"
+            android:drawablePadding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/email"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner_background" />
+
+        <!-- Password input -->
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/password"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corner_background"
+            android:inputType="textPassword" />
+
+        <!-- Sign in button -->
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/ButtonBlue"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Sign up link -->
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_a_new_account_sign_up"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="32dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <!-- WhatsApp Icon -->
+    <ImageView
+        android:id="@+id/iv_whatsapp"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/whatsappgreen"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:contentDescription="WhatsApp Icon" />
+
+</FrameLayout>

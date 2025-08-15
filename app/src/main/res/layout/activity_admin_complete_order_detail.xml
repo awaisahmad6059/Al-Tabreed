@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_corner_background"
+            android:contentDescription="@string/back_button_desc"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/screenLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="91dp"
+            android:layout_toEndOf="@+id/back_button"
+            android:text="Order Detail"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/usernameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_button"
+            android:layout_marginTop="8dp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="Username"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/useridLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userTextView"
+            android:layout_marginTop="8dp"
+            android:text="Userid"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/useridTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/useridLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="Userid"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/useridTextView"
+            android:layout_marginTop="8dp"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categoryLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="Category Content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/detailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categoryTextView"
+            android:layout_marginTop="20dp"
+            android:text="Detail"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="Detail Content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailTextView"
+            android:layout_marginTop="20dp"
+            android:text="location"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="location Content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/statusLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locationTextView"
+            android:layout_marginTop="20dp"
+            android:text="status"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/statusTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusLabel"
+            android:background="@drawable/rounded_corner_background"
+            android:padding="10dp"
+            android:text="status Content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/pictureLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTxtView"
+            android:layout_marginTop="20dp"
+            android:text="Social Media"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/pictureImageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/pictureLabel"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image"/>
+
+
+        <LinearLayout
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pictureImageView"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/deleteTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/ButtonBlue"
+                android:text="Delete Task"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cancelTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/ButtonWhite"
+                android:text="Cancel Task"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
