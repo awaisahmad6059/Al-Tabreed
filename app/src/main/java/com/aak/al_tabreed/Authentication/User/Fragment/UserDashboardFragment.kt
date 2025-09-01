@@ -3,6 +3,7 @@ package com.aak.al_tabreed.Authentication.User.Fragment
 import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.graphics.Color
 import android.graphics.Typeface
@@ -57,6 +58,7 @@ class UserDashboardFragment : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_user_dashboard, container, false)
+        loadLocale()
 
         userId = arguments?.getString("userId")
         userName = view.findViewById(R.id.user_name)
@@ -65,7 +67,6 @@ class UserDashboardFragment : Fragment() {
 
 
         adapter = UserRecentTaskAdapter(taskList) { task ->
-            // Handle task item click – maybe open detail fragment
         }
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
@@ -117,9 +118,16 @@ class UserDashboardFragment : Fragment() {
         return view
     }
 
-
-
-
+    private fun loadLocale() {
+        val sharedPref: SharedPreferences = requireContext().getSharedPreferences("Settings", Context.MODE_PRIVATE)
+        val language = sharedPref.getString("My_Lang", "en") ?: "en"
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.setLocale(locale)
+        config.setLayoutDirection(locale)
+        resources.updateConfiguration(config, resources.displayMetrics)
+    }
 
     private fun fetchAndShowNotification() {
         userId?.let { uid ->

@@ -9,22 +9,34 @@ android {
     compileSdk = 36
 
     defaultConfig {
+
         applicationId = "com.aak.al_tabreed"
         minSdk = 23
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.4"
+        versionCode = 12
+        versionName = "2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        resConfigs("en", "ar")
+
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
+            isShrinkResources = false // ✅ Kotlin DSL property
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
+
             )
+        }
+    }
+    bundle {
+        language {
+            // Disable language split to keep all resources in one bundle
+            enableSplit = false
         }
     }
     compileOptions {
@@ -67,4 +79,5 @@ dependencies {
     implementation("com.google.android.libraries.places:places:3.4.0")
     implementation("com.squareup.picasso:picasso:2.8")
 
+    implementation("com.facebook.soloader:soloader:0.10.4")
 }
